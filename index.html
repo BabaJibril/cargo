@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* Style for the dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Style for the default button */
+    .dropdown-item {
+        background-color: #3498db; /* Blue color */
+        border: none;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px; /* Added border-radius */
+        transition: background-color 0.3s;
+    }
+    
+    /* Darker blue on hover for the default button */
+    .dropdown-item:hover {
+        background-color: #2980b9;
+    }
+    
+    /* Style for the dropdown content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3498db; /* Blue color */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 10px; /* Added border-radius */
+        border: 2px solid #2980b9; /* Darker blue border */
+        color: #fff; /* White text color */
+        transition: display 0.3s ease; /* Added transition effect */
+    }
+    
+    /* Show the dropdown content when hovering over the dropdown */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    /* Style for the dropdown items */
+    .dropdown-content .dropdown-item {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        transition: background-color 0.3s;
+    }
+    
+    /* Darker blue on hover for the dropdown items */
+    .dropdown-content .dropdown-item:hover {
+        background-color: #2980b9;
+    }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="dropdown">
+        <button class="dropdown-item" onclick="changeLanguage('en')">English</button>
+        <div class="dropdown-content">
+            <button class="dropdown-item" onclick="changeLanguage('ar')" >العربية</button>
+            <button class="dropdown-item" onclick="changeLanguage('zh')" >中文</button>
+            <button class="dropdown-item" onclick="changeLanguage('fr')" >Français</button>
+</body>
+</html>
+
+
